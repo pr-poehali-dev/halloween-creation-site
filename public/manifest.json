@@ -1,0 +1,18 @@
+{
+  "name": "Monster Holidays",
+  "short_name": "Monster 🎃",
+  "description": "Хэллоуин только для своих: мультики, AR примерка, показ мод котиков и генератор картинок!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D0515",
+  "theme_color": "#FF6B00",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://cdn.poehali.dev/projects/eb5e70ff-2bdc-4d2d-898c-a23deca1bc7c/files/5f182de6-7614-4e4e-93b8-68352611b6f1.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
