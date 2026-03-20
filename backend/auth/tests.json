@@ -1,0 +1,38 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Unknown action returns 400",
+      "method": "POST",
+      "path": "/",
+      "body": {"action": "unknown"},
+      "expectedStatus": 400
+    },
+    {
+      "name": "use_invite with empty code returns 400",
+      "method": "POST",
+      "path": "/",
+      "body": {"action": "use_invite", "code": ""},
+      "expectedStatus": 400
+    },
+    {
+      "name": "check_session without token returns 401",
+      "method": "POST",
+      "path": "/",
+      "body": {"action": "check_session", "token": ""},
+      "expectedStatus": 401
+    },
+    {
+      "name": "admin_login with wrong password returns 403",
+      "method": "POST",
+      "path": "/",
+      "body": {"action": "admin_login", "password": "wrongpassword"},
+      "expectedStatus": 403
+    }
+  ]
+}
